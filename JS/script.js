@@ -4,6 +4,10 @@ let answer = prompt("Сколько фильмов вы уже просмотр�
 let numberOfFilms = answer
 console.log(numberOfFilms)
 
+//3)
+let lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", "")
+let filmGrade = prompt("На сколько оцените его?", "")
+
 //2)
 const personalMovieDB = {
     count: numberOfFilms,
@@ -14,7 +18,3 @@ const personalMovieDB = {
     genres: [], 
     privat: false
 }
-
-//3)
-let lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", "")
-let filmGrade = prompt("На сколько оцените его?", "")
