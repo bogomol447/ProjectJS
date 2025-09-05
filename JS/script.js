@@ -1,8 +1,6 @@
 //1)
 let numberOfFilms = prompt("Сколько фильмов вы уже просмотрели?", "")
 
-console.log(numberOfFilms)
-
 //3)
 let lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", ""),
     filmGrade = prompt("На сколько оцените его?", ""),
