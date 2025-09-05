@@ -5,14 +5,14 @@ let numberOfFilms = answer
 console.log(numberOfFilms)
 
 //3)
-let lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", "")
-let filmGrade = prompt("На сколько оцените его?", "")
-let lastWatchedMovie2 = prompt("Один из последних просмотренных фильмов?", "")
-let filmGrade2 = prompt("На сколько оцените его?", "")
-console.log(lastWatchedMovie)
-console.log(filmGrade)
-console.log(lastWatchedMovie2)
-console.log(filmGrade2)
+let lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", ""),
+    filmGrade = prompt("На сколько оцените его?", ""),
+    lastWatchedMovie2 = prompt("Один из последних просмотренных фильмов?", ""),
+    filmGrade2 = prompt("На сколько оцените его?", "")
+console.log(lastWatchedMovie),
+            (filmGrade),
+            (lastWatchedMovie2),
+            (filmGrade2)
 //2)
 const personalMovieDB = {
     count: numberOfFilms,
