@@ -1,1 +1,1 @@
-console.log(4 + 5)
+let numberOfFilms = prompt("Сколько фильмов вы уже просмотрели?", "")
