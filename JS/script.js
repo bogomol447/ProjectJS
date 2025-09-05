@@ -16,13 +16,11 @@ console.log(lastWatchedMovie),
 //2)
 const personalMovieDB = {
     count: numberOfFilms,
-    movies: {lastWatchedMovie: lastWatchedMovie, filmGrade: filmGrade,
-             lastWatchedMovie2: lastWatchedMovie2, filmGrade2: filmGrade2
-            },
+    movies: {},
     actors: {},
     genres: [], 
     privat: false
 }
-// personalMovieDB.movies.lastWatchedMovie = lastWatchedMovie
-// personalMovieDB.movies.filmGrade = filmGrade
+personalMovieDB.movies[lastWatchedMovie] = filmGrade
+personalMovieDB.movies[lastWatchedMovie2] = filmGrade2
 console.log(personalMovieDB)
