@@ -1,5 +1,6 @@
 
-let numberOfFilms = prompt("Сколько фильмов вы уже просмотрели?", "")
+let numberOfFilms = +prompt("Сколько фильмов вы уже просмотрели?", "")
+
 let lastWatchedMovie,
     filmGrade
 
@@ -22,12 +23,14 @@ for (let i = 1; i <= numberOfFilms; i++){
     }
 }
 
-if (personalMovieDB.count < 10){
+if (personalMovieDB.count < 10 && personalMovieDB.count >= 1){
     alert("Просмотренно довольно мало фильмов")
 }else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30){
     alert("Вы классический зритель")
-}else{
+}else if(personalMovieDB.count >= 30){
     alert("Вы киноман")
+}else{
+    alert("Вы не смотрели фильмы")
 }
 
 console.log(personalMovieDB)
