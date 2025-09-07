@@ -4,8 +4,12 @@ let lastWatchedMovie,
     filmGrade
 
 for (let i = 1; i <= numberOfFilms; i++){
-    lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", ""),
-    filmGrade = prompt("На сколько оцените его?", "")
+    lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", "")
+        if (lastWatchedMovie == "" || lastWatchedMovie.length > 50 || lastWatchedMovie == null){
+           alert("Попробуйте еще раз")
+    }else{
+        filmGrade = prompt("На сколько оцените его?", "")
+    }
 }
 
 const personalMovieDB = {
@@ -15,6 +19,8 @@ const personalMovieDB = {
     genres: [], 
     privat: false
 }
+
+
 
 personalMovieDB.movies[lastWatchedMovie] = filmGrade
 personalMovieDB.movies[lastWatchedMovie2] = filmGrade2
