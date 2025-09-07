@@ -24,7 +24,7 @@ for (let i = 1; i <= numberOfFilms; i++){
 
 if (personalMovieDB.count < 10){
     alert("Просмотренно довольно мало фильмов")
-}else if(personalMovieDB.count >= 10 && personalMovieDB.count <= 30){
+}else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30){
     alert("Вы классический зритель")
 }else{
     alert("Вы киноман")
