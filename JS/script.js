@@ -20,9 +20,15 @@ const personalMovieDB = {
     privat: false
 }
 
+if (personalMovieDB.count < 10){
+    alert("Просмотренно довольно мало фильмов")
+}else if(personalMovieDB.count >= 10 && personalMovieDB.count <= 30){
+    alert("Вы классический зритель")
+}else{
+    alert("Вы киноман")
+}
 
 
 personalMovieDB.movies[lastWatchedMovie] = filmGrade
-personalMovieDB.movies[lastWatchedMovie2] = filmGrade2
 
 console.log(personalMovieDB)
