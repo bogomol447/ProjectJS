@@ -1,10 +1,12 @@
 
 let numberOfFilms = prompt("Сколько фильмов вы уже просмотрели?", "")
+let lastWatchedMovie,
+    filmGrade
 
-let lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", ""),
-    filmGrade = prompt("На сколько оцените его?", ""),
-    lastWatchedMovie2 = prompt("Один из последних просмотренных фильмов?", ""),
-    filmGrade2 = prompt("На сколько оцените его?", "")
+for (let i = 1; i <= numberOfFilms; i++){
+    lastWatchedMovie = prompt("Один из последних просмотренных фильмов?", ""),
+    filmGrade = prompt("На сколько оцените его?", "")
+}
 
 const personalMovieDB = {
     count: numberOfFilms,
